@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Les Papilles</title>
+
+  <link rel="icon" href="images/favicon.ico">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+
+  <script src="https://kit.fontawesome.com/3a822e9218.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+  <!-- Home Starts Here -->
+  <div class="page" id="home">
+
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-navbar">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand me-auto head" href="#home">Les Papilles</a>
+        <div class="collapse navbar-collapse" id="navbarToggler">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link nav-theme active" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-theme" href="#menu">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-theme" href="#special">Special</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-theme" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-theme" href="#contact">Contact</a>
+            </li>
+            &nbsp;
+            <li class="nav-item">
+              <a class="nav-link nav-theme book" href="#book">Book a Table</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div>
+      <div class="home-heading">
+        Welcome to <span class="home-highlight"> Les Papilles </span>
+        <div class="home-text"> Delivering great food for more than 18 years! </div>
+        <a class="nav-theme book home-link" href="#menu"> Our Menu </a> &nbsp;
+        <a class="nav-theme book home-link" href="#book"> Book a Table </a>
+      </div>
+
+      <span type="button" class="play-button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        <img src="images/play_button.png" alt="Video play button">
+      </span>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content modal-theme">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel"><em>Les Papilles</em> - Demo Video</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <iframe width="464" height="261" src="https://www.youtube-nocookie.com/embed/xPPLbEFbCAo?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <!-- Home Ends Here -->
+
+  <!-- Menu Starts Here -->
+  <div class="page" id="menu">
+
+    <div class="menu-heading"> Check Our Tasty Menu </div>
+
+    <div class="col-8 mx-auto">
+      <div class="row">
+
+        <div class="col-6 menu-box">
+          <div class="menu-item">
+            <img src="images/lobster-bisque.jpg" alt="lobster-bisque"> Lobster Bisque <span class="menu-highlight">..................... </span>$5.95
+          </div>
+          <div class="menu-item">
+            <img src="images/tuscan-grilled.jpg" alt="tuscan-grilled"> Tuscan Grilled <span class="menu-highlight">...................... </span>$9.95
+          </div>
+          <div class="menu-item">
+            <img src="images/greek-salad.jpg" alt="greek-salad"> Greek Salad <span class="menu-highlight">........................... </span>$9.95
+          </div>
+          <div class="menu-item">
+            <img src="images/lobster-roll.jpg" alt="lobster-roll"> Lobster Roll <span class="menu-highlight">......................... </span>$12.95
+          </div>
+        </div>
+
+        <div class="col-6 menu-box">
+          <div class="menu-item">
+            <img src="images/cake.jpg" alt="cake"> Crab Cake <span>............................ </span>$10.95
+          </div>
+          <div class="menu-item">
+            <img src="images/caesar.jpg" alt="caesar"> Caesar Selections <span>............... </span>$8.95
+          </div>
+          <div class="menu-item">
+            <img src="images/mozzarella.jpg" alt="mozzarella"> Mozzarella Stick <span>................. </span>$4.95
+          </div>
+          <div class="menu-item">
+            <img src="images/spinach-salad.jpg" alt="spinach-salad"> Spinach Salad <span>..................... </span>$9.95
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- Menu Ends Here -->
+
+  <!-- Special Start Here -->
+  <div class="page" id="special">
+
+    <div class="special-heading"> Check Our Specials </div>
+
+    <div class="col-10 special-box mx-auto">
+
+      <div class="special-list">
+        <ul>
+          <li id="s1" class="special-item special-item-bg" onclick="dish1()"> Soupe à l’oignon </li>
+          <li id="s2" class="special-item" onclick="dish2()"> Coq au vin </li>
+          <li id="s3" class="special-item" onclick="dish3()"> Flamiche </li>
+          <li id="s4" class="special-item" onclick="dish4()"> Chocolate soufflé </li>
+        </ul>
+      </div>
+
+      <div class="dish d1">
+        <div class="special-content">
+          <strong> Soupe à l’oignon </strong><br><br>
+          <em>This is a traditional French soup made of onions and beef stock, usually served with croutons and melted cheese on top. The soup’s unique flavor comes from the caramelization of the onions, which often have brandy or sherry added during
+            the slow-cooking process.</em>
+        </div>
+        <img src="images/specials-1.png" alt="Soupe à l’oignon">
+      </div>
+
+      <div class="dish d2">
+        <div class="special-content">
+          <strong> Coq au vin </strong><br><br>
+          <em>Usually served with croutons and melted cheese on top, this is a traditional French soup made of onions and beef stock. The soup’s unique flavor comes from the caramelization of the onions, which often have brandy or sherry added during
+            the slow-cooking process.</em>
+        </div>
+        <img src="images/specials-2.png" alt="Soupe à l’oignon">
+      </div>
+
+      <div class="dish d3">
+        <div class="special-content">
+          <strong> Flamiche </strong><br><br>
+          <em> This is a traditional French soup made of onions and beef stock, usually served with croutons and melted cheese on top. The soup’s unique flavor comes from the caramelization of the onions, which often have brandy or sherry added
+            during
+            the slow-cooking process.</em>
+        </div>
+        <img src="images/specials-3.png" alt="Soupe à l’oignon">
+      </div>
+
+      <div class="dish d4">
+        <div class="special-content">
+          <strong> Chocolate soufflé </strong><br><br>
+          <em>Usually served with croutons and melted cheese on top, this is a traditional French soup made of onions and beef stock. The soup’s unique flavor comes from the caramelization of the onions, which often have brandy or sherry added during
+            the slow-cooking process.</em>
+        </div>
+        <img src="images/specials-4.png" alt="Soupe à l’oignon">
+      </div>
+    </div>
+
+  </div>
+  <!-- Special Ends Here -->
+
+  <!-- About Start Here -->
+  <div class="page" id="about">
+
+    <div class="col-9 mx-auto about-padding">
+      <div class="about-bg">
+        <div class="about-content">
+
+          <div class="about-heading"> Les Pappiles - The Bistroy </div><br />
+          <p> Gourmet yes, but friendly as with friends. In 2003, Bertrand BLUY opened "Le Bistroy ... Les Papilles". A warm and lively name like its cuisine, sassy and direct like its service. Chef Tom (Ulric CLAUDE) invites you to taste tasty
+            dishes made
+            with local products. Welcome ! </p>
+          <p> Gourmet & friendly. In 2003, Bertrand Bluy opened the gastronomic restaurant in the heart of the Quartier Latin. A cozy place where the chef Tom invites you to enjoy dishes made with local products. </p>
+
+        </div>
+        <img src="images/about.jpg" alt="about-image">
+
+      </div>
+    </div>
+  </div>
+  <!-- About Ends Here -->
+
+  <!-- Contact Starts Here -->
+  <div class="page" id="contact">
+
+    <div class="contact-heading"> Contact Us </div>
+
+    <div class="col-6 mx-auto">
+
+      <form action="scripts/contact_us_script.php" method="post">
+        <input type="text" name="name" class="form-control half-input" placeholder="Your Name" required> &nbsp;
+        <input type="email" name="email" class="form-control half-input" placeholder="Your Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+        <input type="text" name="subject" class="form-control" placeholder="Subject" required>
+        <textarea rows="8" name="message" class="form-control" placeholder="Message" required=""></textarea>
+        <button type="submit" class="btn contact-button">Send Message</button>
+      </form>
+
+    </div>
+
+  </div>
+  <!-- Contact Ends Here -->
+
+  <!-- Book a Table -->
+  <div class="page" id="book">
+
+    <div class="book-heading"> Book a Table </div>
+
+    <div class="col-8 mx-auto">
+      <form action="scripts/book_table_script.php" method="post">
+
+        <input type="text" name="name" class="form-control three-input" placeholder="Your Name" required> &nbsp;
+        <input type="email" name="email" class="form-control three-input" placeholder="Your Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required> &nbsp;
+        <input type="tel" name="telephoneNumber" class="form-control three-input" placeholder="Your Phone" min-length="10" max-length="12" required>
+        <input type="date" name="date" class="form-control three-input" placeholder="Date" required> &nbsp;
+        <input type="time" name="time" class="form-control three-input" placeholder="Time" required> &nbsp;
+        <input type="number" name="numOfPeople" class="form-control three-input" placeholder="Number of People" min="1" max="11" required>
+        <textarea rows="4" name="message" class="form-control" placeholder="Message" required=""></textarea>
+        <button type="reset" class="btn book-button half-input"> Reset </button> &nbsp;
+        <button type="submit" class="btn book-button half-input"> Book a Table </button>
+
+      </form>
+    </div>
+    <div class="book-end">&#169; 2021 INTERNSHIP PROJECT - ABHISHEK BISHT</div>
+  </div>
+  <!-- Book a Table -->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
