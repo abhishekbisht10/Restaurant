@@ -16,7 +16,7 @@
  <!-- PHP Code for Database starts here -->
 
  <?php
-  $con = mysqli_connect("localhost","root","","restraunt_database") or die(mysqli_error($con));
+  $con = mysqli_connect("localhost","root","","restaurant_database") or die(mysqli_error($con));
 
   $name = mysqli_real_escape_string($con, $_POST['name']);
   $email = mysqli_real_escape_string($con, $_POST['email']);
